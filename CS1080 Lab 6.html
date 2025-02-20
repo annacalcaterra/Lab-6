@@ -66,10 +66,10 @@
     <script>
         function showGreeting() {
             // Step 1: Get the name from the input field
-            const newText = getElementById('nameInput').value;
+            const newText = document.getElementById('nameInput').value;
 
             // Step 2: Create a greeting message using a variable
-            let result = "<h1>Hello " + name + "</h1>";
+            let result = "<h1>Hello " + newText + "</h1>";
 
             // Step 3: Update the div element with the greeting message
             document.getElementById('greetingMessage').innerHTML = result;
